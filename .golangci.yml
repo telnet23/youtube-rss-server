@@ -1,0 +1,6 @@
+version: "2"
+formatters:
+  enable:
+    - gci
+    - gofmt
+    - goimports
