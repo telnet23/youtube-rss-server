@@ -1,0 +1,5 @@
+FROM alpine:3.23
+ARG TARGETPLATFORM
+COPY $TARGETPLATFORM/youtube-rss-server .
+ENTRYPOINT ["./youtube-rss-server"]
+EXPOSE 8080

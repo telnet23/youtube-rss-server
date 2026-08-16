@@ -48,9 +48,19 @@ go install github.com/telnet23/youtube-rss-server@latest
 API_KEY=... youtube-rss-server
 ```
 
-## Running Using Docker
+## Running Using Pre-Built Binaries
+
+Binaries can be downloaded from GitHub Releases: https://github.com/telnet23/youtube-rss-server/releases
 
 ```
-docker build git@github.com:telnet23/youtube-rss-server -t youtube-rss-server
-docker run -e API_KEY=... youtube-rss-server
+tar xzf youtube-rss-server_*.tar.gz
+API_KEY=... ./youtube-rss-server
+```
+
+## Running Using Pre-Built Docker Images
+
+Docker images can be pulled from GitHub Container Registry:
+
+```
+docker run -e API_KEY=... ghcr.io/telnet23/youtube-rss-server
 ```
