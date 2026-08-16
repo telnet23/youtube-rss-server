@@ -3,7 +3,7 @@ module github.com/telnet23/youtube-rss-server
 go 1.26.2
 
 require (
-	github.com/jellydator/ttlcache/v3 v3.4.0
+	github.com/jellydator/ttlcache/v3 v3.4.1
 	github.com/stretchr/testify v1.11.1
 	google.golang.org/api v0.276.0
 )
